@@ -1,54 +1,130 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="CSS/main.css">
-	<title>ManoDivya Kathiravan Website</title>
-</head>
-	<body>
-  <div class="grid">
-    <div class="row">
-     	<div style = "height:150px;" class="col-6">
-	<img src="img/img_6.jpg" alt="profile Image" style="width:140px;height:150px;margin-left:100px;">
-	</div>
-      	<div style = "text-align:left;" class="col-6">
-      		<h1 style="margin-left:200px;" fontcolor>ManoDivya Kathiravan</h1>
-      		<h3 style="margin-left:360px;">Software Developer</h3>
+    <head>
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/main1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                  <img class="img-responsive img-space" src="img/img_6.jpg"></div>
+                <div class="col-md-6 text-right">
+                    <h1 class="text-uppercase">ManoDivya Kathiravan</h1>
+                    <h3>Software Developer</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive img-1" src="img/img_1.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-muted" style="margin-top:50px;">
+                    <h2>Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top:50px;">
+                <div class="col-md-4" >
+                    <img class="img-resposive img-2"src="img/img_2.png" style="margin-left:-50px;" data-toggle="modal" data-target="#img1">
+                    <h3 class="text-uppercase" style="margin-right:70px;">Cryptanalysis</h3>
+                    <p style="margin-right:70px;"><a href="http://github.com">Link to project</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-resposive img-2" src="img/img_3.jpg" style="margin-right:20px;" data-toggle="modal" data-target="#img2">
+                    <h3 class="text-uppercase">Reverse Engineering</h3>
+                    <p><a href="http://github.com">Link to project</a></p>
+                </div>
+            
+            <div class="col-md-4">
+                    <img class="img-resposive img-2" src="img/img_4.jpeg" style="margin-left:40px;" data-toggle="modal" data-target="#img3">
+                    <h3 class="text-uppercase" style="margin-left:40px;">Content Addressable Network</h3>
+                    <p style="margin-left:40px;"><a href="http://github.com">Link to project</a></p>
+                </div>
+                
+
+          </div>
+
+<!-- Modal -->
+<div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">CryptAnalysis Project</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive img-2" src="img/img_2.png" style="margin-bottom:20px;">
+        As a part of cryptanalysis project solved the  Mystery Twister challenges. Alice Birthday Party- I  (Used Common modulus attack on RSA to decrypt the encrypted message without knowing the corresponding secret key). Alice Birthday party -II ( Used Chinese remainder theorem attack on RSA to decrypt the encrypted message that used the same exponent value "e" for the same message).
         </div>
-
-    </div>
-
-    <hr width="85%" Align="middle" color="#BCBBBB">
-    
-      <div style="height:500px;"class="row">
-
-      	<img src="img/img_1.jpg" alt="portfolio image"                      style="width:85%;height:80%;margin-left:100px;margin-top:50px;">
-
-
-      </div>
-   
-      <div class="col-12" style="text:align:left;">
-      <h2 style="margin-left:100px;">Featured Work</h2>
-    </div>
- 
-    <div class="row">
-      <div class="col-4">
-      		<img src="img/img_2.png" alt="cryptochallenge" style="width:300px;height:200px;margin-left: 100px;">
-			<h3 style="margin-left: 100px;">CryptAnalysis</h3>
-			<p style="margin-left: 100px;"><a href="http://github">http://github.com</a></p>
-      </div>
-      <div class="col-4">
-      		<img src="img/img_3.jpg" alt="reverse engineer" style="width:300px;height:200px;margin-left: 50px;">
-      		<h3 style="margin-left: 50px;">Reverse Engineering</h3>
-      		<p style="margin-left: 50px;"><a href="http://github">http://github.com</a></p>
-      </div>
-      <div class="col-4" >
-      		<img src="img/img_4.jpeg" alt="content addressable network" style = "width:300px;height:200px;margin-left:30px;">
-      		<h3 style="margin-left:30px;">Content Addressable Network</h3>
-      		<p style="margin-left:30px;"><a href="http://github">http://github.com</a></p>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</body>
+</div>
 
+<!-- Modal -->
+
+<div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Reverse Engineering Project</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive img-2" src="img/img_3.jpg"style="margin-bottom:20px;">
+        Reverse engineered a stock market ticker. Identified various flaws and security loopholes and bypassed their payment system. This project was adjudicated first among 15  projects by students and professor.
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Content Addressable Network</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive img-2" src="img/img_4.jpeg" style="margin-bottom:20px;">
+        Designed and implemented the file insert and retrieve algorithm, routing mechanism, node join and leave protocol and Displaying peer information for a distributed, decentralized P2P infrastructure that provides a distributed hash table functionality.
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
 </html>
